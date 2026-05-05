@@ -1,6 +1,8 @@
-for(int x = 0 ; x < 10 ; x++){
-    printf("X is: %d\n ", x); // print current value of x 
-    #ifdef both // include extra code only if "out" 
-    #include"example08.b.c"
+for(int i = 0; i < 10 ; i++){
+    printf("Result= %d\n", (i*x)); //multiply i by x BOTH
+
+        #ifdef enr
+        //inner
+        printf("Result= %d\n", (i)); //multiply i by x
     #endif
 }
